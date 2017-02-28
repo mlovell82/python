@@ -1,0 +1,23 @@
+# import the random module
+# this file asks user to enter a number, compares it with a random number, then asks user if they want to continue
+import random
+
+state = bool(True)
+
+while state:
+
+    computer = random.randint(0,9)
+
+    computerString = str(computer)
+
+    player = raw_input("Enter a number between 0 and 9  ")
+
+    number = int(player)
+
+    if number > computer:
+        print("Your " + player + " is greater than computer's " + computerString)
+    else:
+        print("Your " + player + " is not greater than computer's " + computerString)
+    newState = raw_input("Want to continue? yes or no   ")
+    if newState == "no":
+        state = bool(False)
