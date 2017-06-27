@@ -1,0 +1,13 @@
+'''here is a lab1 project in c++ rewritten in python
+
+#include <iostream>
+
+using std::cout; using std::endl;
+
+int main() {
+	cout << "Hello, Michael Lovell!  How are you?" << endl;
+}'''
+
+s = "Hello, Michael Lovell!  How are you?"
+
+print s
