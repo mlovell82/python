@@ -1,0 +1,20 @@
+# A sort program originally done in c++ for my cs1 course
+
+one = input('Enter a number')
+two = input('Enter a number')
+three = input('Enter a number')
+
+if one > two:
+    temp = one
+    one = two
+    two = temp
+if one > three:
+    temp =one
+    one = three
+    three = temp
+if two > three:
+    temp = two
+    two = three
+    three = temp
+
+print(one, two, three)
