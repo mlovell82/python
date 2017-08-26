@@ -18,6 +18,13 @@ green = (0, 255, 0)
 display_width = 800
 display_height = 600
 
+path = 0,0
+untouchablePath = [path]
+
+def wall(untouchablePath):
+    for XnY in untouchablePath:
+        if XnY[0] == 0 or XnY[1] == 800 or XnY == 0 or XnY[1] == 600:
+            gameOver = True
 
 gameDisplay = pygame.display.set_mode((display_width,display_height))
 
